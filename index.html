@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM y Módulos</title>
+    <!-- 0. Primero importar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- 1. Montar el grid básico -->
+     <main class="container">
+        <div class="row">
+            <div class="col-12 col-md-3  mt-5 pt-5 mb-2">
+                <ul class="list-group">
+                    <li class="list-group-item" onclick="crearTabla()"><i class="bi bi-table"></i> Crea una tabla</li>
+                    <li class="list-group-item" onclick="crearLista()"><i class="bi bi-list"></i> Crea una lista</li> 
+                    <li class="list-group-item" onclick="crearParrafos()"><i class="bi bi-text-paragraph"></i> Crea dos párrafos</li>
+                    <li class="list-group-item" onclick="crearImagen()"><i class="bi bi-card-image"></i> Crea una imagen</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-9 ">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="text-center">Ejercicio con DOM y módulos JavaScript</h1>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row row-cols-2">
+                            <div class="col border p-2" id="cuadro1"></div>
+                            <div class="col border p-2" id="cuadro2"></div>
+                            <div class="col border p-2" id="cuadro3"></div>
+                            <div class="col border p-2" id="cuadro4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </main>
+     
+     <!-- Aquí los scripts que utilizo (en este caso main.js)-->
+      <script type="module" src="./main.js"></script>
+</body>
+</html>
